@@ -11,11 +11,15 @@
 
   %body
     .content
-      .stripe.fill.bg1
+      .stripe.fill.bg
         .header.container
-          %h1 {{ header.title }}
-          %h2 {{ header.time }}, {{ header.date }}
-          %img.logo{:src => "{{ header.logo }}"}
+          %img.logo{:src=> "{{ header.logo}}"}
+          %h2 {{ header.title }}
+          %h3 {{ header.time }}, {{ header.date }}
+
+      .stripe
+        .navbar
+
 
       .stripe
         .event
@@ -32,32 +36,10 @@
         .map
           %iframe{:src => "{{ map.shareurl }}", :frameborder => "0", :width => "100%", :height => "100%"}
 
-      .stripe
-        .websites.container
-          %h2 Event Organisers
-          %p {{ cards.blurb }}
-          .cards.clearfix.mxn1
-            %a{:href => "{{ cards.left.href }}"}
-              .card.col.sm-col-4.p2.border.rounded.m1
-                %h3 {{ cards.left.title }}
-                %img.rounded{:src => "{{ cards.left.img }}"}
-                %p {{ cards.left.blurb }}
-
-            %a{:href => "{{ cards.right.href }}"}
-              .card.col.sm-col-4.p2.border.rounded.m1
-                %h3 {{ cards.right.title }}
-                %img.rounded{:src => "{{ cards.right.img }}"}
-                %p {{ cards.right.blurb }}
-
-      .stripe.fill.bg2
-        .twitter.container
-          %h3 Follow us on twitter for updates!
-          .clearfix.mxn1
-            .md-col-6.col.p1
-              %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.left }}", "data-height" => "500", "data-link-color" => "#7E317B"}Tweets by @{{ twitter.left }}
-            .md-col-6.col.p1
-              %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.right }}", "data-height" => "500", "data-link-color" => "#7E317B"}Tweets by @{{ twitter.right }}
-
-
-    %script{:src =>"//platform.twitter.com/widgets.js", :charset => "utf-8", :async => "async"}
+      .stripe.fill.bg
+        .logos.container
+          {%- for item in logos %}
+          %a{:href => "{{ item[1] }}", :class=> "instlogo"}
+            %img{:src => "static/{{ item[0] }}", :class => "instlogo"}
+          {%- endfor %}
 

@@ -64,19 +64,25 @@ img {
   color: black;
 }
 
-.bg1 {
+.bg {
   background-image: url("background.jpg");
   background-position: center;
   background-size: cover;
-}
-
-.bg2 {
-  background-image: url("background.jpg");
-  background-position: center;
-  background-size: cover;
-  padding-bottom: 8em;
 }
 
 .logo {
-  max-width:10em;
+  max-width:20em;
+  padding-top:2em;
+}
+
+.logos {
+  display: block;
+}
+
+.instlogo {
+  max-height: 2em;
+  width: auto;
+  padding-right:0.5em;
+  padding-top:0.5em;
+  text-decoration:none;
 }
