@@ -1,0 +1,45 @@
+header:
+  title: Dark Matter Day
+  time: "6:00 PM"
+  date: "31st October 2017"
+  logo: "static/logo.png"
+
+details:
+  heading: Seeing the Invisible
+  blurb: >
+      Come along to the Department of Physics on the 31st of October
+      (<a href="http://www.darkmatterday.com/">Dark Matter Day!</a>) for a
+      chance to engage with some of the exciting science that we do. We will
+      have interactive exhibits where you will learn about Dark Matter, what
+      it is, what effects it causes and how we are trying to detect it right
+      here in the North East!</p>
+
+      <p>The event will be at the new Physics building (picture right) and
+      will start at 6:00 PM. We look forward to seeing you there!</p>
+  img: "static/details.jpg"
+
+map:
+  # Get the URL from the 'embed' part of Google Maps for this section.
+  shareurl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921.9266050720277!2d-1.575483541687205!3d54.76698822414814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e876681ec066b%3A0x2498b411a888e4b7!2sDepartment+of+Physics!5e0!3m2!1sen!2suk!4v1506414231298"
+
+cards:
+  # Use these as a link to the two groups webpages
+  blurb: >
+    This exhibit is brought to you through a partnership between the Institute for Particle
+    Physics Phenomenology and the Institute for Computational Cosmology. You can find out
+    more about their individual exhibits on their websites below!
+  left:
+    title: "Modelling the Invisible"
+    href: "http://www.modellinginvisible.org"
+    img: "static/modelling.png"
+    blurb: "The Modelling the Invisible exhibit was first shown at the Royal Society Summer Science Festival 2017, and aims to teach the public about dark matter detection methods and the particle theory behind them."
+  right:
+    title: "Galaxy Makers"
+    href: "http://www.galaxymakers.org"
+    img: "static/galaxymakers.png"
+    blurb: "The Galaxy Makers exhibit was first shown at the Royal Society Summer Science Festival 2016, and continues today online where you can make your own galaxy and universe!"
+
+twitter:
+  left: "DarkerMatters"
+  right: "IPPP_Durham"
+

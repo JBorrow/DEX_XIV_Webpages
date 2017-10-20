@@ -1,0 +1,82 @@
+html * {
+  font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               helvetica, 'helvetica neue',
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 60em;
+  margin: auto;
+  padding: 0 1em;
+}
+
+.content {
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  height: 30em;
+  margin-bottom: -3em;
+}
+
+.stripe {
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.fill {
+  color: white;
+}
+
+.header h1 {
+  font-size: 4em;
+}
+
+.header h2 {
+  font-size: 3em;
+}
+
+.header h3 {
+  font-size: 2em;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.cards a {
+  color: black;
+}
+
+.bg1 {
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg2 {
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 8em;
+}
+
+.logo {
+  max-width:10em;
+}

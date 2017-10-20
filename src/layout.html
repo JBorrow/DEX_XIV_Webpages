@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta charset='utf-8'>
+<meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+<link href='https://unpkg.com/basscss@8.0.2/css/basscss.min.css' rel='stylesheet'>
+<link href='static/style.css' rel='stylesheet'>
+</head>
+<body>
+<div class='content'>
+<div class='stripe fill bg1'>
+<div class='header container'>
+<h1>{{ header.title }}</h1>
+<h2>{{ header.time }}, {{ header.date }}</h2>
+<img class='logo' src='{{ header.logo }}'>
+</div>
+</div>
+<div class='stripe'>
+<div class='event'>
+<div class='container clearfix'>
+<div class='md-col-6 col'>
+<h2>{{ details.heading }}</h2>
+<p>{{ details.blurb }}</p>
+</div>
+<div class='md-col-1 col'>
+<p></p>
+</div>
+<div class='md-col-5 col'>
+<img class='rounded' src='{{ details.img }}'>
+</div>
+</div>
+</div>
+</div>
+<div class='stripe fill'>
+<div class='map'>
+<iframe frameborder='0' height='100%' src='{{ map.shareurl }}' width='100%'></iframe>
+</div>
+</div>
+<div class='stripe'>
+<div class='websites container'>
+<h2>Event Organisers</h2>
+<p>{{ cards.blurb }}</p>
+<div class='cards clearfix mxn1'>
+<a href='{{ cards.left.href }}'>
+<div class='card col sm-col-4 p2 border rounded m1'>
+<h3>{{ cards.left.title }}</h3>
+<img class='rounded' src='{{ cards.left.img }}'>
+<p>{{ cards.left.blurb }}</p>
+</div>
+</a>
+<a href='{{ cards.right.href }}'>
+<div class='card col sm-col-4 p2 border rounded m1'>
+<h3>{{ cards.right.title }}</h3>
+<img class='rounded' src='{{ cards.right.img }}'>
+<p>{{ cards.right.blurb }}</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class='stripe fill bg2'>
+<div class='twitter container'>
+<h3>Follow us on twitter for updates!</h3>
+<div class='clearfix mxn1'>
+<div class='md-col-6 col p1'>
+<a class='twitter-timeline' data-height='500' data-link-color='#7E317B' href='https://twitter.com/{{ twitter.left }}'>Tweets by @{{ twitter.left }}</a>
+</div>
+<div class='md-col-6 col p1'>
+<a class='twitter-timeline' data-height='500' data-link-color='#7E317B' href='https://twitter.com/{{ twitter.right }}'>Tweets by @{{ twitter.right }}</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script async='async' charset='utf-8' src='//platform.twitter.com/widgets.js'></script>
+</body>
+</html>

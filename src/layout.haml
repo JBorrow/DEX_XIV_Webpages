@@ -1,0 +1,63 @@
+!!!HTML
+
+%html
+  
+  %head
+    %meta{"content" => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{"charset" => "utf-8"}
+    %meta{"content" => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", "name" => "viewport"}
+    %link{:href => "https://unpkg.com/basscss@8.0.2/css/basscss.min.css", :rel => "stylesheet"}
+    %link{:href => "static/style.css", :rel => "stylesheet"}
+
+  %body
+    .content
+      .stripe.fill.bg1
+        .header.container
+          %h1 {{ header.title }}
+          %h2 {{ header.time }}, {{ header.date }}
+          %img.logo{:src => "{{ header.logo }}"}
+
+      .stripe
+        .event
+          .container.clearfix
+            .md-col-6.col
+              %h2 {{ details.heading }}
+              %p {{ details.blurb }}
+            .md-col-1.col
+              %p
+            .md-col-5.col
+              %img.rounded{:src => "{{ details.img }}"}
+
+      .stripe.fill
+        .map
+          %iframe{:src => "{{ map.shareurl }}", :frameborder => "0", :width => "100%", :height => "100%"}
+
+      .stripe
+        .websites.container
+          %h2 Event Organisers
+          %p {{ cards.blurb }}
+          .cards.clearfix.mxn1
+            %a{:href => "{{ cards.left.href }}"}
+              .card.col.sm-col-4.p2.border.rounded.m1
+                %h3 {{ cards.left.title }}
+                %img.rounded{:src => "{{ cards.left.img }}"}
+                %p {{ cards.left.blurb }}
+
+            %a{:href => "{{ cards.right.href }}"}
+              .card.col.sm-col-4.p2.border.rounded.m1
+                %h3 {{ cards.right.title }}
+                %img.rounded{:src => "{{ cards.right.img }}"}
+                %p {{ cards.right.blurb }}
+
+      .stripe.fill.bg2
+        .twitter.container
+          %h3 Follow us on twitter for updates!
+          .clearfix.mxn1
+            .md-col-6.col.p1
+              %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.left }}", "data-height" => "500", "data-link-color" => "#7E317B"}Tweets by @{{ twitter.left }}
+            .md-col-6.col.p1
+              %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.right }}", "data-height" => "500", "data-link-color" => "#7E317B"}Tweets by @{{ twitter.right }}
+
+
+    %script{:src =>"//platform.twitter.com/widgets.js", :charset => "utf-8", :async => "async"}
+
