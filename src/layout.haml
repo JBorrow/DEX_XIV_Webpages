@@ -19,6 +19,14 @@
 
       .stripe
         .navbar
+          .container
+            %ul.nav
+              {%- for item in navigation  %}
+              %li
+                %a{:href => "{{ item.page }}"}
+                  {{ item.name }}
+              {%- endfor %}
+
 
 
       .stripe
@@ -30,7 +38,7 @@
             .md-col-1.col
               %p
             .md-col-5.col
-              %img.rounded{:src => "{{ details.img }}"}
+              %img.rounded.mt2{:src => "{{ details.img }}"}
 
       .stripe.fill
         .map

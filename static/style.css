@@ -86,3 +86,31 @@ img {
   padding-top:0.5em;
   text-decoration:none;
 }
+
+.navbar {
+  background-color: #DDD;
+  padding: 1em;
+  margin-top:-1em;
+}
+
+.nav {
+  list-style: none;
+  display: inline;
+  padding: 1em;
+  margin: 0;
+  margin-left: -1.5em;  /* offset first navbar element */
+}
+
+.nav li {
+  display: inline;
+}
+
+.mt2 {
+  margin-top:2em;
+}
+
+.nav li a {
+  color: black;
+  text-decoration: none;
+  padding:0.5em;
+}

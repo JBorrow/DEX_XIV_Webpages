@@ -4,6 +4,16 @@ header:
   date: "DATE"
   logo: "static/dexlogo.png"
 
+navigation:
+  - name: Home
+    page: "index.html"
+  - name: Registration
+    page: "registration.html"
+  - name: Information
+    page: "information.html"
+  - name: Programme
+    page: "programme.html"
+
 details:
   heading: Seeing the Invisible
   blurb: >

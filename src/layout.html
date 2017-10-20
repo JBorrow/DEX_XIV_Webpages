@@ -17,7 +17,19 @@
 </div>
 </div>
 <div class='stripe'>
-<div class='navbar'></div>
+<div class='navbar'>
+<div class='container'>
+<ul class='nav'>
+{%- for item in navigation  %}
+<li>
+<a href='{{ item.page }}'>
+{{ item.name }}
+</a>
+</li>
+{%- endfor %}
+</ul>
+</div>
+</div>
 </div>
 <div class='stripe'>
 <div class='event'>
@@ -30,7 +42,7 @@
 <p></p>
 </div>
 <div class='md-col-5 col'>
-<img class='rounded' src='{{ details.img }}'>
+<img class='rounded mt2' src='{{ details.img }}'>
 </div>
 </div>
 </div>
