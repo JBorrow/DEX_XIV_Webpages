@@ -32,13 +32,7 @@
       .stripe
         .event
           .container.clearfix
-            .md-col-6.col
-              %h2 {{ details.heading }}
-              %p {{ details.blurb }}
-            .md-col-1.col
-              %p
-            .md-col-5.col
-              %img.rounded.mt2{:src => "{{ details.img }}"}
+            {% block content %}{% endblock %}
 
       .stripe.fill
         .map

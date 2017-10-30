@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="md-col-6 col">
+    <h2>{{ details.header }}</h2>
+    <p>{{ details.blurb}}</p>
+</div>
+<div class="md-col-1">
+    <p></p>
+</div>
+<div class="md-col-5">
+    <img src="{{ details.img }}" class="mt2"/>
+</div>
+{% endblock %}
+

@@ -6,18 +6,26 @@ the structure as an object to our template.
 import jinja2
 import yaml
 
-def get_from_filesystem(templates, data_fn):
+
+def get_from_filesystem(templates, data_fn, shared_data=None):
     """ Takes a list of template names and returns a zipped list of template
     objects and associated data values that are ready for rendering wih the
     render_template function. """
 
-    template_loader = jinja2.FileSystemLoader(searchpath=".")
+    template_loader = jinja2.FileSystemLoader(searchpath="./src")
     template_env = jinja2.Environment(loader=template_loader)
 
     templates = list(map(template_env.get_template, templates))
+
+    shared = get_data(shared_data)
     data = get_data(data_fn)
+
+    if len(shared) == 1:
+        shared = shared * len(data)
+
+    out_data = [dict(d, **s) for d, s in zip(data, shared)]
     
-    return zip(templates, data)
+    return zip(templates, out_data)
 
 
 def get_data(data_fn):
@@ -42,22 +50,30 @@ def get_data(data_fn):
     return data
 
 if __name__ == "__main__":
+    SHARED_DATA = [
+        "src/shared.yaml",
+    ]
+
     DATA = [
-        "src/data.yaml",
+        "src/home.yaml",
+        "src/home.yaml",
     ]
 
     TEMPLATES = [
-        "src/layout.html",
+        "home.html",
+        "submit.html",
     ]
 
     OUTPUT = [
         "index.html",
+        "submit.html",
     ]
 
     OUT_TEXT = [
         temp.render(**data) for temp, data in get_from_filesystem(
             TEMPLATES, 
-            DATA
+            DATA,
+            SHARED_DATA
         )
     ]
 
