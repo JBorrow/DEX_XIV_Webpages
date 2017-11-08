@@ -1,5 +1,29 @@
 {% extends "layout.html" %}
 {% block content %}
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsifXitXkTrIr1ZHYqSoYyEQvMrnrMRxr-SAO6O67lMCuTeQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<h1>{{ details.heading }}</h1>
+
+<p>{{ details.blurb }}</p>
+
+{%- if details.registrationopen %}
+<p>Please register for the conference using <a href="{{ details.link }}">this registration form</a>.</p>
+{%- else %}
+<p>Sorry, but registration is now closed.</p>
+{%- endif %}
+
+<h1>Conference Dinner</h1>
+<p>{{ dinnerinfo.blurb }}</p>
+<h2 class="center">Menu</h2>
+<div class="dinner">
+    {%- for name, course in dinnerinfo.courses.items() %}
+        <div class="{{ name }} dinneritem">
+            <h4>{{ name | title }}</h4>
+            <ul>
+                {%- for item in course %}
+                    <li>{{ item }}</li>
+                {%- endfor %}
+            </ul>
+        </div>
+    {%- endfor %}
+</div>
 {% endblock %}
 

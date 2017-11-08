@@ -1,0 +1,41 @@
+details:
+  heading: "Registration"
+  blurb: >
+    The Durham-Edinburgh eXtragalactic workshop XIV will take place on January 8th and 9th in room OCW017 of the Ogden Centre West - Ogden centre for Fundamental Physics, located on the Durham University science site.</p><p>
+    The workshop will start on Monday at 11:00am (with coffee from 10:30am) and will end around 16:00 on Tuesday</p><p>
+    A buffet lunch will be served in the break out space on the first floor of the Ogden Centre West both days for all registered participants, thanks to the support of the STFC, Centre for Extragalactic Astronomy and the Institute for Computational Cosmology.</p><p>
+    Registration will close on Monday the 27th November.</p><p>
+    The registration fee of £35 will include the cost of the workshop dinner on Monday night at the Kingslodge Inn. Delegates not attending the dinner will not have to pay the registration fee. The registration fees will be collected internally by:</p>
+    <ul>
+      <li><b>Lancaster</b>: David Sobral</li>
+      <li><b>Edinburgh</b>: Jose Onorbe</li>
+      <li><b>St Andrews</b>: Anne-Marie Weijmans</li>
+      <li><b>Durham</b>: Shufei Rowe or Sabine Schindler</li>
+    </ul>
+    <p>The registration fee should be payed in cash and no later than the 4th December 2017. Receipt for the payment will be provided when arriving in Durham.
+
+  registrationopen: true
+  link: "https://docs.google.com/forms/d/e/1FAIpQLSevrt771BnP_tsGgLfdu7ojstOOT0urHHmVgLDMn6InF3jYGQ/viewform?usp=sf_link"
+
+map:
+  shareurl: https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d8125.849780880923!2d-1.5886559515832868!3d54.772741393378965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x487e876681ec066b%3A0x2498b411a888e4b7!2sPhysics+Department%2C+University+of+Durham%2C+A177%2C+Durham%2C+County+Durham+DH1+3%2C+UK!3m2!1d54.767002999999995!2d-1.573952!4m5!1s0x487e7df691674a59%3A0xf707dc93db3ac1a0!2sThe+Kings+Lodge+Inn%2C+Waddington+St%2C+Flass+Vale%2C+Durham+DH1+4BG!3m2!1d54.778602!2d-1.586983!5e0!3m2!1sen!2suk!4v1509723153220
+
+dinnerinfo:
+  blurb: >
+    This year's workshop dinner will be held at the Kingslodge Inn (see map below). The price per person is £35.
+  courses:
+    starters: [
+      Salted cod croquettes with a lemon aioli and crispy seaweed,
+      Smoked pulled chicken green bean and crouton,
+      Bocconcini tomato and olive bruschetta,
+    ]
+    mains: [
+      Fruits of the sea Papillion. Seabass fillet with prawns crab and clams in a wine and lemon cream sauce,
+      Pan fried pheasant breast with gratin potato braised red cabbage and a blackberry jus,
+      Roast garlic and mushroom pearl barley risotto (v/vg),
+    ]
+    desserts: [
+      Dark chocolate torte (v/vg) with coconut icecream,
+      Mixed winter berry fruit tartlet with mango and passion fruit crème,
+      Rhubarb and ginger Eton mess,
+    ]

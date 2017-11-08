@@ -1,14 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="md-col-6 col">
-    <h2>{{ details.header }}</h2>
+    <h2>{{ details.heading }}</h2>
     <p>{{ details.blurb}}</p>
+    <p>Please contact us at <a href="mailto:{{ details.contact }}">{{ details.contact }}</a> if you have any questions.</p>
 </div>
-<div class="md-col-1">
+<div class="md-col-1 col">
     <p></p>
 </div>
-<div class="md-col-5">
-    <img src="{{ details.img }}" class="mt2"/>
+<div class="md-col-5 col">
+    <img src="{{ details.img }}" class="mt2 rounded"/>
 </div>
 {% endblock %}
 

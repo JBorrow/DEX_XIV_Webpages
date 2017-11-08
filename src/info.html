@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>{{ venue.heading }}</h1>
+<div class="clearfix map-slice-notoppad">
+    <div class="col md-col-7">
+        <p>{{ venue.blurb }}</p>
+    </div>
+    <div class="col md-col-1">
+        <p></p>
+    </div>
+    <div class="col md-col-4">
+        <div class='map-mini rounded'>
+            <iframe frameborder='0' height='100%' src='{{ venue.map }}' width='100%' class="rounded"></iframe>
+        </div>
+    </div>
+</div>
+
+<h1>{{ organisers.heading }}</h1>
+<p>{{ organisers.blurb }}</p>
+<ul>
+    {%- for organiser in organisers.people %}
+        {%- if organiser.role %}
+            <li>{{ organiser.role }}: {{ organiser.name }} ({{ organiser.institution }})</li>
+        {%- else %}
+            <li>{{ organiser.name }} ({{ organiser.institution }})</li>
+        {%- endif %}
+    {%- endfor %}
+</ul>
+
+
+<h1>{{ accomodation.heading }}</h1>
+<p>{{ accomodation.blurb }}</p>
+{%- for place in accomodation.places %}
+    <div class="clearfix map-slice">
+        <div class="col md-col-7">
+            <h3>{{ place.name }}</h3>
+            <p>{{ place.info }}</p>
+            {%- if place.email %}
+                <p><b>Email</b>: <a href="mailto:{{ place.email }}">{{ place.email}}</a></p>
+            {%- endif %}
+            {%- if place.phone %}
+                <p><b>Phone</b>: {{ place.phone }}</p>
+            {%- endif %}
+            <p><b>Address</b>:</p>
+            <ul class="address">
+                {%- for line in place.address %}
+                    <li>{{ line }}</li>
+                {%- endfor %} 
+            </ul>
+        </div>
+        <div class="col md-col-1">
+            <p></p>
+        </div>
+        <div class="col md-col-4">
+            <div class='map-mini rounded'>
+                <iframe frameborder='0' height='100%' src='{{ place.map }}' width='100%' class="rounded"></iframe>
+            </div>
+        </div>
+    </div>
+{%- endfor %}
+{% endblock %}
+{% block map %}{% endblock %}
+

@@ -6,6 +6,7 @@
 <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
 <link href='https://unpkg.com/basscss@8.0.2/css/basscss.min.css' rel='stylesheet'>
 <link href='static/style.css' rel='stylesheet'>
+<title>{{ header.title }}</title>
 </head>
 <body>
 <div class='content'>
@@ -13,10 +14,10 @@
 <div class='header container'>
 <img class='logo' src='{{ header.logo}}'>
 <h2>{{ header.title }}</h2>
-<h3>{{ header.time }}, {{ header.date }}</h3>
+<h3>{{ header.start }} - {{ header.stop }}</h3>
 </div>
 </div>
-<div class='stripe'>
+<div class='navcontainer'>
 <div class='navbar'>
 <div class='container'>
 <ul class='nav'>
@@ -38,11 +39,13 @@
 </div>
 </div>
 </div>
+{% block map %}
 <div class='stripe fill'>
 <div class='map'>
 <iframe frameborder='0' height='100%' src='{{ map.shareurl }}' width='100%'></iframe>
 </div>
 </div>
+{% endblock %}
 <div class='stripe fill bg'>
 <div class='logos container'>
 {%- for item in logos %}

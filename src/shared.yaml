@@ -1,18 +1,18 @@
 header:
-  title: Durham-Edinburgh eXtragalactic Workshops
-  time: "TIME"
-  date: "DATE"
+  title: Durham-Edinburgh eXtragalactic Workshop
+  start: 8th
+  stop: 9th January 2018
   logo: "static/dexlogo.png"
 
 navigation:
   - name: Home
     page: "index.html"
   - name: Registration
-    page: "registration.html"
+    page: "submit.html"
   - name: Information
     page: "information.html"
-  - name: Programme
-    page: "programme.html"
+#  - name: Programme
+#    page: "programme.html"
 
 logos:
   [
@@ -21,6 +21,8 @@ logos:
     ["icclogo.png", "http://icc.dur.ac.uk"],
     ["ioa.png", "http://www.roe.ac.uk/ifa/"],
     ["observatory.png", "http://www.roe.ac.uk/"],
-    ["ufoewhiteout.png", "https://www.ed.ac.uk/"]
+    ["ufoewhiteout.png", "https://www.ed.ac.uk/"],
+    ["standrews.png", "https://www.st-andrews.ac.uk"],
+    ["lancaster.png", "http://www.lancaster.ac.uk/"]
   ]
 
