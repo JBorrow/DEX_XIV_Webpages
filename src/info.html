@@ -15,18 +15,6 @@
     </div>
 </div>
 
-<h1>{{ organisers.heading }}</h1>
-<p>{{ organisers.blurb }}</p>
-<ul>
-    {%- for organiser in organisers.people %}
-        {%- if organiser.role %}
-            <li>{{ organiser.role }}: {{ organiser.name }} ({{ organiser.institution }})</li>
-        {%- else %}
-            <li>{{ organiser.name }} ({{ organiser.institution }})</li>
-        {%- endif %}
-    {%- endfor %}
-</ul>
-
 
 <h1>{{ accomodation.heading }}</h1>
 <p>{{ accomodation.blurb }}</p>

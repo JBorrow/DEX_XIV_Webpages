@@ -4,12 +4,26 @@
     <h2>{{ details.heading }}</h2>
     <p>{{ details.blurb}}</p>
     <p>Please contact us at <a href="mailto:{{ details.contact }}">{{ details.contact }}</a> if you have any questions.</p>
+
+    <h3>{{ organisers.heading }}</h3>
+    <p>{{ organisers.blurb }}</p>
+    <ul>
+        {%- for organiser in organisers.people %}
+            {%- if organiser.role %}
+                <li><b>{{ organiser.role }}</b>: {{ organiser.name }} ({{ organiser.institution }})</li>
+            {%- else %}
+                <li>{{ organiser.name }} ({{ organiser.institution }})</li>
+            {%- endif %}
+        {%- endfor %}
+    </ul>
 </div>
 <div class="md-col-1 col">
     <p></p>
 </div>
 <div class="md-col-5 col">
-    <img src="{{ details.img }}" class="mt2 rounded"/>
+    {%- for image in details.images %}
+        <img src="{{ image }}" class="mt2 rounded"/>
+    {%- endfor %}
 </div>
 {% endblock %}
 

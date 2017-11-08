@@ -11,8 +11,8 @@ navigation:
     page: "submit.html"
   - name: Information
     page: "information.html"
-#  - name: Programme
-#    page: "programme.html"
+  - name: Programme
+    page: "programme.html"
 
 logos:
   [

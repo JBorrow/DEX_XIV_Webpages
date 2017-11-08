@@ -57,19 +57,22 @@ if __name__ == "__main__":
     DATA = [
         "src/home.yaml",
         "src/submit.yaml",
-        "src/info.yaml"
+        "src/info.yaml",
+        "src/programme.yaml"
     ]
 
     TEMPLATES = [
         "home.html",
         "submit.html",
-        "info.html"
+        "info.html",
+        "programme.html"
     ]
 
     OUTPUT = [
         "index.html",
         "submit.html",
-        "information.html"
+        "information.html",
+        "programme.html"
     ]
 
     OUT_TEXT = [

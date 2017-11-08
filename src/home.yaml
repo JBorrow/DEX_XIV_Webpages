@@ -3,9 +3,36 @@ details:
   blurb: >
     Revisiting a 15 year old DEX topic, this workshop aims to bring together observers and theorists to discuss the latest results and what the next generation of instruments and simulations will do for extragalactic astronomy. With the commissioning of new space and ground based telescopes and instruments such as  E-ELT, TMT, LSST, Euclid, JWST, eROSITA and ATHENA along with increasingly more detailed simulations such as APSOSLTE, C-EAGLE and MUFASA we are entering a new era of extragalactic astronomy spanning optical, near-infrared and X-rays. These large amounts of never before seen data and computational resources will allow us to study the Universe in even greater detail and with ever larger samples.  But what are the most pressing questions we need to answer and how do we answer them?</p><p>
     Following the tradition of previous Durham-Edinburgh eXtragalactic workshops, this meeting intends to bring together observers and theorists to discuss advances in modelling and observation techniques in extragalactic astronomy. This year we would like to invite colleagues from Durham, Edinburgh, St Andrews and Lancaster with the aim of fostering collaborations between our respective research groups.
-  img: "static/details.jpg"
+  images: [
+    "static/details.jpg",
+    "static/details2.jpg",
+    "static/details3.jpg"
+  ]
   contact: "dex.workshop@gmail.com"
   
+organisers:
+  heading: Organisers
+  blurb: "The following people have been involved in the organisation of DEX:"
+  people:
+    - name: Bitten Gullberg
+      role: Chair
+      institution: Durham
+    - name: Sotiria Fotopoulou
+      institution: Durham
+    - name: Andrew Robertson
+      institution: Durham
+    - name: Matthieu Schaller
+      institution: Durham
+    - name: Peder Norberg
+      institution: Durham
+    - name: Josh Borrow
+      institution: Durham
+    - name: Jose Onorbe
+      institution: Edinburgh
+    - name: David Sobral
+      institution: Lancaster 
+    - name: Anna-Marie Weijman 
+      institution: St Andrews
 
 map:
   # Get the URL from the 'embed' part of Google Maps for this section.
