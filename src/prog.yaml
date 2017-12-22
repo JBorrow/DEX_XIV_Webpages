@@ -1,0 +1,187 @@
+days:
+  - name: "Monday"
+    sessions:
+      - time: "11.00-11.10"
+        name: Welcome
+        talks:
+        - author: Bitten Gullberg
+          name: Workshop Welcome
+       
+      - time: "11.10-12.30"
+        name: "Session (Survey)"
+        talks:
+          - author: Anne-Marie Weijmans
+            name: "The Future of the Sloan Digital Sky Surveys: SDSS-V"
+            length: long+
+          - author: Behzad Ansarinejad
+            name: The VST ATLAS Southern Galaxy Cluster Catalogue
+            length: short
+          - author: Alex Smith
+            name: Targeting Incompleteness in the DESI Bright Galaxy Survey
+            length: long
+          - author: Ana Paulino-Afonso
+            name: The role of mass and environment in galaxy evolution at z~1
+            length: long
+          - author: Sotiria Fotopoulou
+            name: Classification-aided photometric redshift estimation
+            length: short
+
+      - time: "12.30-13.30"
+        name: Lunch
+
+      - time: "13.30-15.00"
+        name: "Session (AGN)"
+        talks:
+          - author: Nic Ross
+            name: Extremely Red Quasars and the ol' JWST
+            length: long+
+          - author: David Starkey
+            name: Quasar variability with the Sloan Digital Sky Survey
+            length: long
+          - author: Tim Hewlett
+            name: "Examining our ignorance with Illustris: AGN and the role of galaxy mergers"
+            length: long
+          - author: Andrew Griffin
+            name: Modelling SMBH spin and radio jets across cosmic time
+            length: long
+          - author: Joao Calhau
+            name: The X-ray activity of star-forming galaxies from z=0.4-6
+            length: short
+
+      - time: "15.00-15.30"
+        name: Break
+
+      - time: "15.30-17.00"
+        name: "Session (Cosmos)"
+        talks: 
+          - author: Joe Zuntz
+            name: Dark Energy Survey First Year Results
+            length: long+
+          - author: Jaime Salcido
+            name: The impact of dark energy on galaxy formation
+            length: long
+          - author: Mark Lovell
+            name: The distribution of dark matter in the IllustrisTNG simulations
+            length: short
+          - author: David Copeland
+            name: The impact of baryons on the sensitivity of dark energy measurements
+            length: short
+          - author: Katarina Kraljic
+            name: Galaxy evolution in the metric of the Cosmic Web
+            length: long
+          - author: Claudio Llinares
+            name: "The shrinking domain framework:  a new, faster, more efficient approach to cosmological simulations"
+            length: short
+
+      - time: "17.00-17.10"
+        name: "Break"
+
+      - time: "17.10-17.45"
+        name: "Session (Cosmos continued)"
+        talks:
+          - author: Chieh-An Lin
+            name: Cosmology with weak-lensing peak counts
+            length: long
+          - author: Stefan Arridge
+            name: The effect of cosmic thermal history on the Lyman-alpha forest?
+            length: long
+
+  - day: "Tuesday"
+    sessions:
+      - time: "9.10-10.35"
+        name: "Session (Lensing)"
+        talks:
+          - author: Russell Smith
+            name: "Will \"next generation simulations\" need a variable IMF? (An observational perspective)"
+            length: long+
+          - author: Richard Massey
+            name: SuperBIT balloon-borne telescope
+            length: short
+          - author: Benjamin Giblin
+            name: Clipping the large scale structure in the first 450 square degrees of the Kilo-Degree Survey
+            length: long
+          - author: James Nightingale
+            name: "The Stellar Haloes of Massive Ellipticals, revealed with Strong Gravitational Lensing"
+            length: long
+          - author: William Collier
+            name: Investigating the stellar initial mass function with low redshift strong lensing early type galaxies
+            length: short
+
+      - name: "Break"
+        time: "10.35-11.05"
+      
+      - name: "Session (GalEvol)"
+        time: "11.05-12.35"
+        talks:
+          - author: Julie Wardlow
+            name: "The gaseous environments of submillimetre galaxies"
+            length: long+
+          - author: Josh Argyle
+            name: Hierarchical Bayesian inference of galaxy structural relations
+            length: short
+          - author: Yirui Zheng
+            name: Creating kinematic maps and IFUs for simulated galaxies
+            length: short
+          - author: Azadeh Fattahi
+            name: Where do (extremely) low surface brightness dwarf satellites in the Local Group come from?
+            length: long
+          - author: Oliver Newton
+            name: The total satellite population of the Milky Way
+            length: long
+          - author: Rohit Kondapally
+            name: Faint dwarf satellite population of a Local Group analogue - what missing satellites?
+            length: short
+
+            
+      - name: "Lunch"
+        time: "12.35-13.30"
+
+      - name: "Session (GalEvol continued/Survey)"
+        time: "13.30-15.00"
+        talks: 
+          - author: Avery Meiksin
+            name: "The Epoch of Reionization 21cm signal: the role of galactic heating"
+            length: long
+          - author: Ruari Mackenzie
+            name: Linking Gas and Galaxies at High Redshift with MUSE
+            length: long
+          - author: Dominic Bates
+            name: Mass & Luminosity Functions Using Clustering Redshifts
+            length: long
+          - author: Fangxia An
+            name: "A machine-learning method for identifying multi-wavelength counterparts of submillimeter galaxies: training and testing using AS2UDS and ALESS"
+            length: long
+
+      - name: "Session (Survey)"
+        time: "13:50-14:50"
+        talks:
+          - author: Elizabeth Cooke
+            name: "The future is now: presenting the largest sample of ALMA-detected SMGs"
+            length: short
+
+          - author: Maria Manolopoulou
+            name: XCS DR2 in the SDSS footprint and the clusters in voids
+            length: long
+
+      - name: "Break"
+        time: "14.50-15.10"
+
+      - name: "Session (Survey continued)"
+        time: "15.10-16.00"
+        talks:
+          - author: Sotiria Fotopoulou
+            name: Classification-aided photometric redshift estimation
+            length: short
+          - author: Sergio Santos
+            name: "Slicing COSMOS with SC4K: the evolution of typical Lya emitters and the Lya escape fraction from z~2 to z~6"
+            length: long
+
+
+      - name: "Discussion & Prizes"
+        time: "16:00"
+
+
+lengths:
+  long+: "20+3 min"
+  long: "15+3 min"
+  short: "8+2 min"
