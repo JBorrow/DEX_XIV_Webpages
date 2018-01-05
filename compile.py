@@ -58,14 +58,14 @@ if __name__ == "__main__":
         "src/home.yaml",
         "src/submit.yaml",
         "src/info.yaml",
-        "src/programme.yaml"
+        "src/prog.yaml"
     ]
 
     TEMPLATES = [
         "home.html",
         "submit.html",
         "info.html",
-        "programme.html"
+        "prog.html"
     ]
 
     OUTPUT = [

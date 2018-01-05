@@ -1,13 +1,13 @@
 days:
   - name: "Monday"
     sessions:
-      - time: "11.00-11.10"
+      - time: "11.00-11.15"
         name: Welcome
         talks:
         - author: Bitten Gullberg
           name: Workshop Welcome
        
-      - time: "11.10-12.30"
+      - time: "11.15-12.35"
         name: "Session (Survey)"
         talks:
           - author: Anne-Marie Weijmans
@@ -19,18 +19,19 @@ days:
           - author: Alex Smith
             name: Targeting Incompleteness in the DESI Bright Galaxy Survey
             length: long
-          - author: Ana Paulino-Afonso
-            name: The role of mass and environment in galaxy evolution at z~1
+          - author: Sergio Santos
+            name: "Slicing COSMOS with SC4K: the evolution of typical Lya emitters and the Lya escape fraction from z~2 to z~6"
             length: long
           - author: Sotiria Fotopoulou
             name: Classification-aided photometric redshift estimation
             length: short
 
-      - time: "12.30-13.30"
+      - time: "12.35-13.30"
         name: Lunch
 
       - time: "13.30-15.00"
         name: "Session (AGN)"
+        chair: "Vivienne Wild"
         talks:
           - author: Nic Ross
             name: Extremely Red Quasars and the ol' JWST
@@ -52,7 +53,8 @@ days:
         name: Break
 
       - time: "15.30-17.00"
-        name: "Session (Cosmos)"
+        name: "Session (Cosmos/LSS)"
+        chair: "Chieh-An Lin"
         talks: 
           - author: Joe Zuntz
             name: Dark Energy Survey First Year Results
@@ -86,10 +88,14 @@ days:
             name: The effect of cosmic thermal history on the Lyman-alpha forest?
             length: long
 
+      - time: "19.00"
+        name: "Dinner"
+
   - day: "Tuesday"
     sessions:
       - time: "9.10-10.35"
         name: "Session (Lensing)"
+        chair: "Andrew Robertson"
         talks:
           - author: Russell Smith
             name: "Will \"next generation simulations\" need a variable IMF? (An observational perspective)"
@@ -110,8 +116,9 @@ days:
       - name: "Break"
         time: "10.35-11.05"
       
-      - name: "Session (GalEvol)"
+      - name: "Session (Galaxy Evolution)"
         time: "11.05-12.35"
+        chair: "Milena Pawlik"
         talks:
           - author: Julie Wardlow
             name: "The gaseous environments of submillimetre galaxies"
@@ -136,8 +143,9 @@ days:
       - name: "Lunch"
         time: "12.35-13.30"
 
-      - name: "Session (GalEvol continued/Survey)"
-        time: "13.30-15.00"
+      - name: "Session (Galaxy Evolution continued/Survey)"
+        time: "13.30-14.40"
+        chair: John Stott
         talks: 
           - author: Avery Meiksin
             name: "The Epoch of Reionization 21cm signal: the role of galactic heating"
@@ -145,40 +153,27 @@ days:
           - author: Ruari Mackenzie
             name: Linking Gas and Galaxies at High Redshift with MUSE
             length: long
-          - author: Dominic Bates
-            name: Mass & Luminosity Functions Using Clustering Redshifts
+          - author: Adam Carnall 
+            name: Inferring the star-formation histories of massive quiescent galaxies with BAGPIPES 
             length: long
           - author: Fangxia An
             name: "A machine-learning method for identifying multi-wavelength counterparts of submillimeter galaxies: training and testing using AS2UDS and ALESS"
             length: long
 
-      - name: "Session (Survey)"
-        time: "13:50-14:50"
+      - name: "Break"
+        time: "14.40-15.00"
+
+      - name: "Session (Survey continued)"
+        time: "15.00-15.50"
         talks:
           - author: Elizabeth Cooke
             name: "The future is now: presenting the largest sample of ALMA-detected SMGs"
             length: short
-
-          - author: Maria Manolopoulou
-            name: XCS DR2 in the SDSS footprint and the clusters in voids
+          - author: Dominic Bates
+            name: "Mass & Luminosity Functions Using Clustering Redshifts"
             length: long
-
-      - name: "Break"
-        time: "14.50-15.10"
-
-      - name: "Session (Survey continued)"
-        time: "15.10-16.00"
-        talks:
-          - author: Sotiria Fotopoulou
-            name: Classification-aided photometric redshift estimation
-            length: short
-          - author: Sergio Santos
-            name: "Slicing COSMOS with SC4K: the evolution of typical Lya emitters and the Lya escape fraction from z~2 to z~6"
-            length: long
-
-
-      - name: "Discussion & Prizes"
-        time: "16:00"
+          - author: All
+            name: Discussion & Prizes
 
 
 lengths:

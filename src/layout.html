@@ -10,14 +10,14 @@
 </head>
 <body>
 <div class='content'>
-<div class='stripe fill bg'>
+<div class='stripe fill bg no-print'>
 <div class='header container'>
 <img class='logo' src='{{ header.logo}}'>
 <h2>{{ header.title }}</h2>
 <h3>{{ header.start }} - {{ header.stop }}</h3>
 </div>
 </div>
-<div class='navcontainer'>
+<div class='navcontainer no-print'>
 <div class='navbar'>
 <div class='container'>
 <ul class='nav'>
@@ -46,7 +46,7 @@
 </div>
 </div>
 {% endblock %}
-<div class='stripe fill bg'>
+<div class='stripe fill bg no-print'>
 <div class='logos container'>
 {%- for item in logos %}
 <a class='instlogo' href='{{ item[1] }}'>

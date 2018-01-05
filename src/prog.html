@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Programme</h1>
+{%- for day in days %}
+  <h2>{{ day.name }}</h2>
+  {%- for session in day.sessions %}
+    <h3>{{ session.name }} | {{ session.time }}</h3>
+    {%- if session.chair %}
+      <h4>Chair: {{ session.chair }}</h4>
+    {%-endif %}
+    {%- if session.talks %}
+      <div class="session-container container">
+        {%- for talk in session.talks %}
+          <div class="row clearfix py1 flex items-center">
+            <div class="col md-col-3 center">
+              {{ talk.author }}
+            </div>
+            <div class="col md-col-7 center">
+              {{ talk.name }}
+            </div>
+            <div class="col md-col-2 center">
+              {{ lengths[talk.length] }}
+            </div>
+          </div>
+        {%- endfor %}
+      </div>
+    {%- endif %}
+    <hr/>
+  {%- endfor %}
+{%- endfor %}
+{% endblock %}
+{% block map %}{% endblock %}
+

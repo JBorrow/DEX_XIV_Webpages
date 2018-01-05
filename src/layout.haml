@@ -12,13 +12,13 @@
 
   %body
     .content
-      .stripe.fill.bg
+      .stripe.fill.bg.no-print
         .header.container
           %img.logo{:src=> "{{ header.logo}}"}
           %h2 {{ header.title }}
           %h3 {{ header.start }} - {{ header.stop }}
 
-      .navcontainer
+      .navcontainer.no-print
         .navbar
           .container
             %ul.nav
@@ -41,7 +41,7 @@
           %iframe{:src => "{{ map.shareurl }}", :frameborder => "0", :width => "100%", :height => "100%"}
       {% endblock %}
 
-      .stripe.fill.bg
+      .stripe.fill.bg.no-print
         .logos.container
           {%- for item in logos %}
           %a{:href => "{{ item[1] }}", :class=> "instlogo"}
