@@ -22,3 +22,10 @@ python3 compile.py
 This will produce the html (static). If you are wishing to deploy the site
 elsewhere, you'll also need to bring the ```static/``` directory along with you
 for the images and css.
+
+Output
+------
+
+A quick note for those unfamiliar with GitHub that have found themselves here
+by searching for DEX... This is the development version of the website. You can
+find the fully built one at http://www.astro.dur.ac.uk/DEX/XIV/
