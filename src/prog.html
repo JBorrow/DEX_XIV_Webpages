@@ -17,7 +17,7 @@
             </div>
             <div class="col md-col-7 center">
               {%- if talk.author | talk_grab %}
-                <a href="{{ talk.author | talk_grab}}">
+                <a href="talks/{{ talk.author | talk_grab}}">
                   {{ talk.name }}
                 </a>
               {%- else %}
