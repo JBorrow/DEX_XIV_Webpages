@@ -1,6 +1,9 @@
 days:
   - name: "Monday"
     sessions:
+      - time: "10.30-11.00"
+        name: "Tea & Coffee (Middle Floor)"
+
       - time: "11.00-11.15"
         name: Welcome
         talks:
@@ -8,7 +11,8 @@ days:
           name: Workshop Welcome
        
       - time: "11.15-12.35"
-        name: "Session (Survey)"
+        name: "Session 1 (Survey)"
+        chair: "Andy Lawrence"
         talks:
           - author: Anne-Marie Weijmans
             name: "The Future of the Sloan Digital Sky Surveys: SDSS-V"
@@ -30,7 +34,7 @@ days:
         name: Lunch
 
       - time: "13.30-15.00"
-        name: "Session (AGN)"
+        name: "Session 2 (AGN)"
         chair: "Vivienne Wild"
         talks:
           - author: Nic Ross
@@ -53,7 +57,7 @@ days:
         name: Break
 
       - time: "15.30-17.00"
-        name: "Session (Cosmos/LSS)"
+        name: "Session 3 (Cosmos/LSS)"
         chair: "Chieh-An Lin"
         talks: 
           - author: Joe Zuntz
@@ -79,7 +83,7 @@ days:
         name: "Break"
 
       - time: "17.10-17.45"
-        name: "Session (Cosmos continued)"
+        name: "Session 3 (Cosmos) continued"
         talks:
           - author: Chieh-An Lin
             name: Cosmology with weak-lensing peak counts
@@ -91,10 +95,10 @@ days:
       - time: "19.00"
         name: "Dinner"
 
-  - day: "Tuesday"
+  - name: "Tuesday"
     sessions:
       - time: "9.10-10.35"
-        name: "Session (Lensing)"
+        name: "Session 4 (Lensing)"
         chair: "Andrew Robertson"
         talks:
           - author: Russell Smith
@@ -116,7 +120,7 @@ days:
       - name: "Break"
         time: "10.35-11.05"
       
-      - name: "Session (Galaxy Evolution)"
+      - name: "Session 5 (Galaxy Evolution)"
         time: "11.05-12.35"
         chair: "Milena Pawlik"
         talks:
@@ -143,7 +147,7 @@ days:
       - name: "Lunch"
         time: "12.35-13.30"
 
-      - name: "Session (Galaxy Evolution continued/Survey)"
+      - name: "Session 6 (Galaxy Evolution continued/Survey)"
         time: "13.30-14.40"
         chair: John Stott
         talks: 
@@ -163,7 +167,7 @@ days:
       - name: "Break"
         time: "14.40-15.00"
 
-      - name: "Session (Survey continued)"
+      - name: "Session 6 (Survey) continued"
         time: "15.00-15.50"
         talks:
           - author: Elizabeth Cooke
